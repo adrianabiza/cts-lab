@@ -1,7 +1,7 @@
-package ro.ase.csie.cts.lab3.faza1;
+package ro.ase.csie.cts.lab3.faza2;
 
 public enum TipProdus {
-	NOU(0), DISCOUNT(0.1f), STOC_LIMITAT(0.25f), VECHI(0.35f);
+	NOU(0),DISCOUNT(0.1f),STOC_LIMITAT(0.25f),VECHI(0.35f);
 	
 	private final float discount;
 	
@@ -12,4 +12,5 @@ public enum TipProdus {
 	public float getDiscount() {
 		return this.discount;
 	}
+
 }
