@@ -11,6 +11,33 @@ public class Produs {
 	InterfataMarketing serviciuMK = null;
 	InterfataValidare seviciuValidare = null;
 	
+	public Produs(InterfataMarketing mk, InterfataValidare validare) {
+		if(validare ==  null) {
+			throw new NullPointerException();
+		}
+		
+		this.setStrategieMK(mk);
+		this.seviciuValidare = validare;
+	}
+	
+	public Produs() {
+		for(Object serviciu: TestProdus.servicii) {
+			if(serviciu instanceof InterfataMarketing) {
+				this.serviciuMK = (InterfataMarketing) serviciuMK;
+			}
+		}
+		if(this.serviciuMK == null) {
+			throw new NullPointerException();
+		}
+	}
+	
+	public void setStrategieMK(InterfataMarketing strategie) {
+		if(strategie ==  null) {
+			throw new NullPointerException();
+		}
+		this.serviciuMK = strategie;
+		
+	}
 	
 	public static float getPretCuDiscount(float pretInitial, float discount) {
 		return pretInitial - (discount * pretInitial);
@@ -31,4 +58,6 @@ public class Produs {
 	    
 	    return pretFinal;
 	  }
+
+
 }
