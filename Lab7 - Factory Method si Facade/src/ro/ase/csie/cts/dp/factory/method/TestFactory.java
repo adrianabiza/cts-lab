@@ -7,7 +7,7 @@ public class TestFactory {
 		
 		boolean isModJoc4Kids = true;
 		
-		if(isModJoc4Kids) {
+		if(isModJoc4Kids) { 
 			//dezvoltare doar cu caractere 4Kids
 		}
 		else{

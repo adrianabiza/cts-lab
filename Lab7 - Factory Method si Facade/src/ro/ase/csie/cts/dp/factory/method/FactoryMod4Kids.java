@@ -2,7 +2,7 @@ package ro.ase.csie.cts.dp.factory.method;
 
 public class FactoryMod4Kids extends FactoryAbstractCaracter {
 
-	@Override
+	@Override 
 	public CaracterJoc getCaracter(TipCaracter tip, String nume) {
 		CaracterJoc caracter = null;
 		switch(tip) {
